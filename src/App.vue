@@ -2,11 +2,11 @@
 <script setup>
 import BigName from '@/components/HomeComponents/BigName.vue';
 import TagLine from './components/HomeComponents/TagLine.vue';
+import Navbar from './components/NavBar.vue';
 import CustomCursor from './components/CustomCursor.vue';
 import { useRoute } from "vue-router";
 import { watch } from 'vue';
 import { useRouteStore } from "./stores/routeStore"
-import Navbar from './components/NavBar.vue';
 
 const routeStore = useRouteStore();
 const route = useRoute();
