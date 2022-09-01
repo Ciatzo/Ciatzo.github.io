@@ -21,6 +21,14 @@ const router = createRouter({
         meta: {
           title: "Resume",
         },
+      },
+      {
+        path: "/contact",
+        name: "contact",
+        component: ResumeView,
+        meta: {
+          title: "Contact",
+        },
       }
     ],
   });

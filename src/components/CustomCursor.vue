@@ -87,7 +87,7 @@
       content: "";
       width: 35px;
       height: 35px;
-      background: white;
+      background: #dddddd;
       border-radius: 50%;
     }
   
@@ -95,7 +95,7 @@
       content: "";
       width: 6px;
       height: 6px;
-      background: #fb923c;
+      background: #00960c;
       border-radius: 50%;
     }
   }
