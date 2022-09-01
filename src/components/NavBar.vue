@@ -173,7 +173,8 @@ function toggleActive() {
         background-repeat: no-repeat;
         background-size: 0 100%;
         transition: background-size 0.4s ease;
-    
+        user-select: none;
+        
         &:hover {
           background-size: 100% 100%;
           cursor: pointer;

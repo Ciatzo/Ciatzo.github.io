@@ -109,8 +109,7 @@ body {
   position: relative;
   display: flex;
   justify-content: right;
-  margin-bottom: auto;
-  align-items: flex-end;
+  align-items: center;
   height: 100%;
   width: 95%;
 }

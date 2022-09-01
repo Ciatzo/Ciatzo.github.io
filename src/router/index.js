@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from "vue-router";
 import BioView from "@/Views/BioView.vue";
 import ResumeView from "@/Views/ResumeView.vue";
+import ContactView from "@/Views/ContactView.vue";
 
 const router = createRouter({
     history: createWebHistory(),
@@ -25,7 +26,7 @@ const router = createRouter({
       {
         path: "/contact",
         name: "contact",
-        component: ResumeView,
+        component: ContactView,
         meta: {
           title: "Contact",
         },
