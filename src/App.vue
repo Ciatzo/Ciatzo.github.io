@@ -7,6 +7,7 @@ import CustomCursor from './components/CustomCursor.vue';
 import { useRoute } from "vue-router";
 import { watch } from 'vue';
 import { useRouteStore } from "./stores/routeStore"
+import VueParticles from "../node_modules/vue-particles/src/vue-particles/vue-particles.vue"
 
 const routeStore = useRouteStore();
 const route = useRoute();
@@ -19,6 +20,21 @@ watch(route, (newVal, oldVal) => {
 <template>
   <div class="page-wrapper">
     <div class="outline">
+
+      <VueParticles class="particle-container" 
+      color="#dddddd"
+      :particleOpacity="0.5"
+      :particlesNumber="80"
+      shapeType="circle"
+      :particleSize="4"
+      linesColor="#dddddd"
+      :linesWidth="1"
+      :lineLinked="true"
+      :lineOpacity="0.3"
+      :linesDistance="200"
+      :moveSpeed="3"
+      :hoverEffect="false"
+      :clickEffect="false" />
 
       <div class="row">
         <div class="column">
@@ -62,12 +78,27 @@ body {
 }
 
 .outline {
+  position: relative;
   border: 2px solid #ddd;
   margin: 25px;
   height: 100%;
 }
 
+.particle-container {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    pointer-events: none;
+    // background-color: red;
+  }
+
 .row {
+  position: absolute;
+  top: 0;
+  left: 0;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
