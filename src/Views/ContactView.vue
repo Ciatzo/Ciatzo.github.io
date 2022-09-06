@@ -25,7 +25,7 @@ function toggleActive() {
     </nav>
 </template>
         
-        <style lang="scss">
+    <style lang="scss">
         $color-white: black;
         $color-black: #ddd;
         $color-gray: #ddd;

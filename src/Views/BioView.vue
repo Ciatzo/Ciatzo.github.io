@@ -10,7 +10,7 @@
     bottom: 0;
     right: 0;
     text-align: right;
-    font-size: 2.5rem;
+    font-size: 3rem;
     font-family: 'Raleway', sans-serif;
     font-weight: 200;    
     user-select: none;
